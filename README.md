@@ -15,27 +15,12 @@ Multi-style output from a single image
 Evaluation using BLEU, METEOR, and BERTScore on Bengali captions
 Low-resource language focus with custom dataset preprocessing for Bengali text
 
-Architecture
+## Architecture
 
-Input Image
-     │
-     ▼
-┌─────────────────────┐
-│  Visual Encoder      │  (ViT backbone)
-│  Feature Extraction  │
-└─────────────────────┘
-     │  image features
-     ▼
-┌─────────────────────┐
-│  Caption Decoder     │  (Seq2Seq / Transformer)
-│  Bengali LM Head     │  fine-tuned on Bengali captions
-└─────────────────────┘
-     │  base Bengali caption
-     ▼
-┌─────────────────────┐
-│  Gemini API          │  style-conditioned rewriting
-│  Style Controller    │  (formal / poetic / humorous / descriptive)
-└─────────────────────┘
-     │
-     ▼
-Stylized Bengali Caption
+```mermaid
+flowchart TD
+    A[Input Image] --> B[Visual Encoder\nViT backbone / Feature Extraction]
+    B -->|image features| C[Caption Decoder\nSeq2Seq / Transformer\nfine-tuned on Bengali captions]
+    C -->|base Bengali caption| D[Gemini API\nStyle Controller]
+    D --> E[Stylized Bengali Caption\nromantic / humorous / factual]
+```
