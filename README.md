@@ -1,20 +1,19 @@
 Stylized Image Captioning in Bengali
 
-A deep learning system that generates stylized image captions in the Bengali language, combining a custom encoder-decoder architecture with the Google Gemini API for multi-style caption generation. Built as an undergraduate thesis project targeting the low-resource Bengali NLP landscape.
+A deep learning system that generates stylized image captions in the Bengali language, combining a custom encoder-decoder architecture  for multi-style caption generation. Built as an undergraduate thesis project targeting the low-resource Bengali NLP landscape.
 
 
 Overview
 
-Standard image captioning systems produce a single factual description per image. This project extends that paradigm by generating captions in multiple stylistic registers — formal, poetic, humorous, and descriptive — all in Bengali. The pipeline fuses visual feature extraction with a language generation backbone fine-tuned for Bangla, and leverages Gemini's instruction-following capability to enforce stylistic constraints.
+Standard image captioning systems produce a single factual description per image. This project extends that paradigm by generating captions in multiple style for say romantic, humorous and factual all in Bengali. The pipeline fuses visual feature extraction with a language generation backbone fine-tuned for Bangla, and leverages Gemini's instruction-following capability to enforce stylistic constraints.
 
 
 Features
 
 
-Visual feature extraction using pretrained CNN/Vision Transformer encoders
+Visual feature extraction using pretrained Vision Transformer encoders
 Bengali caption generation via a fine-tuned sequence-to-sequence model
-Multi-style output — formal, poetic, humorous, descriptive captions from a single image
-Gemini API integration for style-conditioned generation and post-processing
+Multi-style output from a single image
 Evaluation using BLEU, METEOR, and BERTScore on Bengali captions
 Low-resource language focus with custom dataset preprocessing for Bengali text
 
