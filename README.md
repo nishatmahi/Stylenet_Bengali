@@ -7,17 +7,13 @@ Overview
 
 Standard image captioning systems produce a single factual description per image. This project extends that paradigm by generating captions in multiple style for say romantic, humorous and factual all in Bengali. The pipeline fuses visual feature extraction with a language generation backbone fine-tuned for Bangla, and leverages Gemini's instruction-following capability to enforce stylistic constraints.
 
-
 Features
-
 
 Visual feature extraction using pretrained Vision Transformer encoders
 Bengali caption generation via a fine-tuned sequence-to-sequence model
 Multi-style output from a single image
 Evaluation using BLEU, METEOR, and BERTScore on Bengali captions
 Low-resource language focus with custom dataset preprocessing for Bengali text
-
-
 
 Architecture
 
