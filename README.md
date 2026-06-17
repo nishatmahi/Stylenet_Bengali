@@ -19,8 +19,7 @@ Low-resource language focus with custom dataset preprocessing for Bengali text
 
 ```mermaid
 flowchart TD
-    A[Input Image] --> B[Visual Encoder\nViT backbone / Feature Extraction]
-    B -->|image features| C[Caption Decoder\nSeq2Seq / Transformer\nfine-tuned on Bengali captions]
-    C -->|base Bengali caption| D[Gemini API\nStyle Controller]
-    D --> E[Stylized Bengali Caption\nromantic / humorous / factual]
+    A[Input Image] --> B[Vision Transformer Encoder\nFeature Extraction]
+    B -->|image features| C[Factored LSTM Decoder\nfine-tuned on Bengali captions]
+    C --> D[Stylized Bengali Caption\nromantic / humorous / factual]
 ```
