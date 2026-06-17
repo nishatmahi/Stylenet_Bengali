@@ -21,7 +21,7 @@ Input Image
      │
      ▼
 ┌─────────────────────┐
-│  Visual Encoder      │  (CNN / ViT backbone)
+│  Visual Encoder      │  (ViT backbone)
 │  Feature Extraction  │
 └─────────────────────┘
      │  image features
